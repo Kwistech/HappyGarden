@@ -1,0 +1,106 @@
+.container{
+    margin: 20 auto;
+    width: 85%;
+    
+}
+
+.row{
+    display: flex;
+    border: 1px solid;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+img{
+    max-width: 50%;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.pot{
+    width:30%;
+    margin: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > button{
+    width: 160px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.planted > button{
+    width:60px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    display: flexbox;
+    margin-left: 10px;
+}
+
+#plantList{
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    width: 515px;
+    height: 500px;
+    border: 1px solid;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow-y:scroll;
+    display: none;
+}
+
+
+
+#exitPlantList{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+td:nth-child(odd){
+    padding:30 300 30 30;
+    border: 1px solid;
+}
+
+tr td button{
+    border: none;
+    width: 100px;
+    height: 100px;
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+.noHover{
+    pointer-events: none;    
+}
+
+.green{
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.hidden{
+    display: none;
+}
