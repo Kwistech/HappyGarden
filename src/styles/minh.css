@@ -1,5 +1,5 @@
 .container{
-    margin: 20 auto;
+    margin: 20px auto;
     width: 85%;
     
 }
@@ -53,7 +53,7 @@ img{
     border: none;
     cursor: pointer;
     height: 30px;
-    display: flexbox;
+    display: -ms-flexbox;
     margin-left: 10px;
 }
 
@@ -80,7 +80,7 @@ img{
 }
 
 td:nth-child(odd){
-    padding:30 300 30 30;
+    padding:30px 300px 30px 30px;
     border: 1px solid;
 }
 
