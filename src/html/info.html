@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../styles/john.css">
     <link href="../styles/int.css" rel="stylesheet"/>
+    <script src="../scripts/john.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 </head>
-<body>
+<body onload="hideSummary()">
 
 <!-- (Pankaj) Logo and Weather API -->
 
@@ -31,7 +32,7 @@
             <ul id="navigation_bar_list">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="garden.html">Your Garden</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </div>
     </nav>
@@ -45,7 +46,7 @@
 <a href="info.html">
     <div id="sidebar">
 
-        <div id="sidebar_option_1">
+        <div id="sidebar_option_1" class="active">
             <h2>Info</h2>
         </div>
 
@@ -53,9 +54,46 @@
 </a>
 
 <!-- (John) Info -->
-<section>
+<section id="info">
+
+    <div>
+        <div>
+            <h1>Info</h1>
+            <p></p>
+        </div>
+        <div id="buttons" class="visible">
+            <input type="button" value="Apple" onclick="hideButtons(); showSummary()">
+            <input type="button" value="Barberry" onclick="hideButtons(); showSummary()">
+            <input type="button" value="Chili" onclick="hideButtons(); showSummary()">
+            <input type="button" value="Date Palm" onclick="hideButtons(); showSummary()">
+            <input type="button" value="Tomato" onclick="hideButtons(); showSummary()">
+            <input type="button" value="Pepper" onclick="hideButtons(); showSummary()">
+        </div>
+    </div>
+
+    <div id="summary" class="hide">
+        <input type="button" value="Back" onclick="hideSummary(); showButtons()" style="width: 98%">
+        <h1 class="center">Summary</h1>
+        <img src="../img/pot.png" alt="Apple" id="pot">
+        <p><strong>Watering: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><strong>Soil: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.</p>
+        <p><strong>Fertilizer: </strong>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.</p>
+        <p><strong>Common Pest: </strong>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
+        <p><strong>Sunlight: </strong>Facilisis sed odio morbi quis commodo.</p>
+        <p><strong>Pot Type: </strong>Nisl suscipit adipiscing bibendum est.</p>
+    </div>
 
 </section>
+
+<div id="padding_end">
+    <p></p>
+</div>
+
+<!-- Footer -->
 
 <div class="footer">
     <div id="facebook">
@@ -72,7 +110,7 @@
     <div id="references">
         <p>
             Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
-            from <a href="www.flaticon.com">www.flaticon.com</a>
+            from <a href="http://www.flaticon.com">www.flaticon.com</a>
         </p>
     </div>
 </div>
