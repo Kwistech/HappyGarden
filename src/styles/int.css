@@ -9,14 +9,20 @@ font
     width: 150px;
     height: 150px;
     background: #555;
+      mix-blend-mode: multiply;
   }
 
+  #logo {
+      border: none;
+      mix-blend-mode: multiply;
+  }
    
   .footer {
     position: fixed;
-    left: 0;
+      padding-top: 1%;
     bottom: 0;
-    width: 100%;
+    width: 89%;
+      margin: auto;
     background-color: rgb(41, 153, 41);
     color: white;
     text-align: center;
