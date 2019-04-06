@@ -4,9 +4,51 @@
     
 }
 
+#garden-selecter{
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid;
+    position: relative;
+    text-align: center;
+}
+
+.fa-minus-square{
+    font-size: 30px;
+    position: absolute;
+    left: 350px;
+    bottom:3px;
+    cursor: pointer;
+}
+
+
+
+.fa-plus-square{
+    font-size: 30px;
+    position: absolute;
+    right: 350px;
+    bottom:3px;
+    cursor: pointer;
+}
+
+.fa-chevron-left{
+    font-size: 70px;
+    position: absolute;
+    left: 8px;
+    top:12px;
+    cursor: pointer;
+}
+
+.fa-chevron-right{
+    font-size: 70px;
+    position: absolute;
+    right: 8px;
+    top:12px;
+    cursor: pointer;
+}
+
 .row{
     display: flex;
-    border: 1px solid;
     margin: 30px 0 20px 30px;
     text-align: center;
 }
@@ -31,7 +73,7 @@ div.pot>img {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 310px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
@@ -49,31 +91,57 @@ div.pot>img {
 }
 
 .planted > button{
-    width:60px;
+    width:90px;
     border: none;
     cursor: pointer;
     height: 30px;
-    display: -ms-flexbox;
+    display: inline-flexbox;
     margin-left: 10px;
 }
 
 #plantList{
     position: absolute;
-    left: 35%;
-    top: 2%;
+    left: 31%;
+    top: 38%;
     width: 515px;
-    height: 500px;
     border: 1px solid;
     background: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-align: center;
-    overflow-y:scroll;
     display: none;
 }
 
+#plantInfo{
+    position: absolute;
+    left: 31%;
+    top: 38%;
+    width: 515px;
+    border: 1px solid;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+    display: none;
+}
+
+select{
+    width: 515px;
+    height: 290px;
+    text-align: center;
+}
+
+option{
+    height: 35px;
+    font-size: 1.3em;
+}
 
 
 #exitPlantList{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+#exitPlantInfo{
     position: absolute;
     right: 10px;
     cursor: pointer;

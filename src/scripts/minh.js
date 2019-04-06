@@ -8,6 +8,12 @@ $(document).ready(function () {
         $("html").css("background-color", "rgba(0, 0, 0, 0)");
     });
 
+    $("#exitPlantInfo").click(function () {
+        $("#plantInfo").toggle();
+        $(".dropdown").toggleClass("noHover");
+        $("html").css("background-color", "rgba(0, 0, 0, 0)");
+    });
+
 
     $("div.dropdown-content > button").click(function () {
         $("#plantList").toggle();
@@ -17,11 +23,18 @@ $(document).ready(function () {
         potSelected = this.value;
     });
 
-    $("td > button").click(function () {
+    $("div.planted :first-child").click(function () {
+        $("#plantInfo").toggle();
+        $(".dropdown").toggleClass("noHover");
+        $("html").css("background-color", "rgba(0, 0, 0, 0.5)");
+        console.log("here");
+    });
+
+    $("option").click(function () {
         $("#plantList").toggle();
         $(".dropdown").toggleClass("noHover");
         $("html").css("background-color", "rgba(0, 0, 0, 0)");
-        changePic(this.value);
+        changePic(this);
     });
 
     $(".pot").click(function () {
@@ -49,18 +62,20 @@ $(document).ready(function () {
         if (!this.classList.contains("green")) {
             let potSelected = this.firstElementChild.getAttribute("src");
             if (potSelected != "../img/pot.png") {
-                $(":nth-child(3)", this).addClass("dropdown-content");
-                $(":nth-child(2)", this).removeClass("dropdown-content");
+                 this.getElementsByClassName("planted")[0].classList.add("dropdown-content");
+                 this.getElementsByClassName("unplanted")[0].classList.remove("dropdown-content");
             } else {
-                $(":nth-child(3)", this).removeClass("dropdown-content");
-                $(":nth-child(2)", this).addClass("dropdown-content");
+                this.getElementsByClassName("planted")[0].classList.remove("dropdown-content");
+                this.getElementsByClassName("unplanted")[0].classList.add("dropdown-content");
+
+              
             }
         }
     });
 
-    function changePic(value) {
+    function changePic(potClicked) {
         let pot = document.getElementsByClassName("pot")[potSelected];
-
+        let value = potClicked.value;
         switch (value) {
             case "Apple":
                 {
@@ -92,20 +107,19 @@ $(document).ready(function () {
                     pot.firstElementChild.setAttribute("src", "../img/pot_Peper.png");
                 }
         }
+
+        potClicked.selected = false;
     }
 
-
-    $(":nth-child(2)", ".planted").click(function () {
+    $(":nth-child(3)", ".planted").click(function () {
         potSelected = this.value;
         console.log("here");
         let pot = document.getElementsByClassName("pot")[potSelected];
         pot.firstElementChild.setAttribute("src", "../img/pot.png");
     });
 
-    $(":nth-child(1)", ".planted").click(function () {
+    $(":nth-child(2)", ".planted").click(function () {
         potSelected = this.value;
-
-
         let potObjects = document.getElementsByClassName("pot");
         for (let index = 0; index < potObjects.length; index++) {
             potObjects[index].children[1].classList.remove("dropdown-content");
@@ -119,6 +133,28 @@ $(document).ready(function () {
 
     })
 
+    $(".fa-chevron-left").click(function(){
+        $("#garden1").removeClass("hidden");
+        $("#garden2").addClass("hidden");
+        $("#garden-selecter > h1").text("Garden 1");
+    });
 
+    $(".fa-minus-square").click(function(){
+        $("#garden1").removeClass("hidden");
+        $("#garden2").addClass("hidden");
+        $("#garden-selecter > h1").text("Garden 1");
+    });
+
+    $(".fa-chevron-right").click(function(){
+        $("#garden1").addClass("hidden");
+        $("#garden2").removeClass("hidden");
+        $("#garden-selecter > h1").text("Garden 2");
+    });
+
+    $(".fa-plus-square").click(function(){
+        $("#garden1").addClass("hidden");
+        $("#garden2").removeClass("hidden");
+        $("#garden-selecter > h1").text("Garden 2");
+    });
 });
 

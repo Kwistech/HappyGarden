@@ -1,115 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../styles/john.css">
-    <link href="../styles/int.css" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-</head>
-<body>
 
-<!-- (Pankaj) Logo and Weather API -->
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="../styles/john.css">
+        <link href="../styles/int.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+    </head>
 
-<div class="header">
-    <!--Made logo from https://www.graphicsprings.com/start-your-logo
-      Used paint.net to edit the logo-->
+    <body>
 
-    <div id="a"><img src="../img/lg.jpg" alt="logo" /></div>
+        <!-- (John) Navigation Bar -->
 
-    <script type="text/javascript" src="../scripts/int.js"></script>
-    <br><a class="weatherwidget-io disabled" href="https://forecast7.com/en/51d05n114d07/calgary/" data-label_1="HAPPY GARDEN" data-label_2="Calgary Weather" data-days="3" data-theme="grass">HAPPY GARDEN Calgary Weather </a>
+        <section id="navigation_bar">
 
-</div>
+                <nav>
+                    <div id="navigation_bar_div">
+                        <ul id="navigation_bar_list">
+                            <li>
+                                <div class="pic1">
+                                    <img src="../img/lg.jpg" alt="logo">
+                                </div>
+                            </li>
+                            <li><a class="active" href="home.html">Home</a></li>
+                            <li><a href="garden.html">Your Garden</a></li>
+                            <li><a href="info.html">Dictionary</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a target="_blank" href="https://www.booked.net/weather/calgary-30502">
+                                    <div class="pic2">
+                                        <img src="https://w.bookcdn.com/weather/picture/32_30502_1_1_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=569&anc_id=74851"
+                                            alt="booked.net" />
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </nav>
+    
+            </section>
 
-<!-- (John) Navigation Bar -->
+        <!-- --------------------- -->
 
-<section id="navigation_bar">
+        <!-- (John) Home Body -->
 
-    <nav>
-        <div id="navigation_bar_div">
-            <ul id="navigation_bar_list">
-                <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="garden.html">Your Garden</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+        <section id="home_body">
+
+            <div id="home_body_div">
+                <div id="home_body_div_content">
+                    <h1>Featured Products</h1>
+                    <br>
+                    <!-- Photo From: https://unsplash.com/photos/zn4Pl32WgWM -->
+                    <div id="product_one" class="product">
+                        <h2><em>Fertilgrow</em></h2>
+                        <img class="home_body_div_content_img" src="../img/pic1.jpg" alt="ad1">
+                        <h3>Fertilgrow is the #1 selling brand of fertilizer in Canada.</h3>
+                        <p>
+                            This is because Fertilgrow uses a combination of high-quality fertilizer with
+                            cutting-edge steroid technology to produce gardens that rival the Summer Palace.
+                        </p>
+                    </div>
+                    <div id="product_two" class="product">
+                        <h2><em>HTwoAuto</em></h2>
+                        <!-- Photo From: https://unsplash.com/photos/vDQ-e3RtaoE -->
+                        <img class="home_body_div_content_img" src="../img/pic2.jpg" alt="ad1">
+                        <h3>HTwoAuto is the best watering solution on the market</h3>
+                        <p>
+                            Once you purchase the auto-faucet, just place it in your garden, connect it and turn it on.
+                            You will never have to worry about remembering t water your garden again!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="padding_end">
+            <p></p>
         </div>
-    </nav>
 
-</section>
-
-<!-- (John) Sidebar -->
-
-<a href="info.html">
-    <div id="sidebar">
-
-        <div id="sidebar_option_1">
-            <h2>Info</h2>
-        </div>
-
-    </div>
-</a>
-
-<!-- --------------------- -->
-
-<!-- (John) Home Body -->
-
-<section id="home_body">
-
-    <div id="home_body_div">
-        <div id="home_body_div_content">
-            <h1>Featured Products</h1>
-            <br>
-            <!-- Photo From: https://unsplash.com/photos/zn4Pl32WgWM -->
-            <div id="product_one" class="product">
-                <h2><em>Fertilgrow</em></h2>
-                <img class="home_body_div_content_img" src="../img/pic1.jpg" alt="ad1">
-                <h3>Fertilgrow is the #1 selling brand of fertilizer in Canada.</h3>
+        <div class="footer">
+            <div id="facebook">
+                <img src="../img/facebook.png" alt="facebook">
+            </div>
+            <div id="instagram">
+                <img src="../img/instagram.png" alt="instagram">
+            </div>
+            <a href="https://github.com/Kwistech/HappyGarden">
+                <div id="github">
+                    <img src="../img/github.png" alt="github">
+                </div>
+            </a>
+            <div id="references">
                 <p>
-                    This is because Fertilgrow uses a combination of high-quality fertilizer with
-                    cutting-edge steroid technology to produce gardens that rival the Summer Palace.
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
+                    from <a href="http://www.flaticon.com">www.flaticon.com</a>
                 </p>
             </div>
-            <div id="product_two" class="product">
-                <h2><em>HTwoAuto</em></h2>
-                <!-- Photo From: https://unsplash.com/photos/vDQ-e3RtaoE -->
-                <img class="home_body_div_content_img" src="../img/pic2.jpg" alt="ad1">
-                <h3>HTwoAuto is the best watering solution on the market</h3>
-                <p>
-                    Once you purchase the auto-faucet, just place it in your garden, connect it and turn it on.
-                    You will never have to worry about remembering t water your garden again!
-                </p>
-            </div>
         </div>
-    </div>
 
-</section>
+        <!-- --------------------- -->
 
-<div id="padding_end">
-    <p></p>
-</div>
+    </body>
 
-<div class="footer">
-    <div id="facebook">
-        <img src="../img/facebook.png" alt="facebook">
-    </div>
-    <div id="instagram">
-        <img src="../img/instagram.png" alt="instagram">
-    </div>
-    <a href="https://github.com/Kwistech/HappyGarden">
-        <div id="github">
-            <img src="../img/github.png" alt="github">
-        </div>
-    </a>
-    <div id="references">
-        <p>
-            Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
-            from <a href="http://www.flaticon.com">www.flaticon.com</a>
-        </p>
-    </div>
-</div>
-
-<!-- --------------------- -->
-
-</body>
 </html>

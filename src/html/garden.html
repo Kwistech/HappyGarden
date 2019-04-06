@@ -1,187 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../styles/john.css">
-    <link href="../styles/int.css" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../styles/minh.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-            crossorigin="anonymous"></script>
-    <title>Your Garden</title>
-</head>
-<body>
 
-<!-- (Pankaj) Logo and Weather API -->
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="../styles/john.css">
+        <link href="../styles/int.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../styles/minh.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <title>Your Garden</title>
+    </head>
 
-<div class="header">
-    <!--Made logo from https://www.graphicsprings.com/start-your-logo
-      Used paint.net to edit the logo-->
+    <body>
+        <!-- (John) Navigation Bar -->
 
-    <div id="a"><img src="../img/lg.jpg" alt="logo" id="logo"/></div>
+        <section id="navigation_bar">
 
-    <script type="text/javascript" src="../scripts/int.js"></script>
-    <br><a class="weatherwidget-io disabled" href="https://forecast7.com/en/51d05n114d07/calgary/" data-label_1="HAPPY GARDEN" data-label_2="Calgary Weather" data-days="3" data-theme="grass">HAPPY GARDEN Calgary Weather </a>
+            <nav>
+                <div id="navigation_bar_div">
+                    <ul id="navigation_bar_list">
+                        <li>
+                            <div class="pic1">
+                                <img src="../img/lg.jpg" alt="logo">
+                            </div>
+                        </li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a class="active" href="garden.html">Your Garden</a></li>
+                        <li><a href="info.html">Dictionary</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a target="_blank" href="https://www.booked.net/weather/calgary-30502">
+                                <div class="pic2">
+                                    <img src="https://w.bookcdn.com/weather/picture/32_30502_1_1_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=569&anc_id=74851"
+                                        alt="booked.net" />
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
 
-</div>
+        </section>
 
-<!-- (John) Navigation Bar -->
+        <section id="garden-selecter">
+                <i class="fas fa-minus-square"></i>
+                <i class="fas fa-plus-square"></i>
+                
+                <i class="fas fa-chevron-left"></i>
+                <h1>Garden 1</h1>
+                <i class="fas fa-chevron-right"></i>
 
-<section id="navigation_bar">
+        </section>
 
-    <nav>
-        <div id="navigation_bar_div">
-            <ul id="navigation_bar_list">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="garden.html" class="active">Your Garden</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+        <div class="container" id="garden1">
+
+            <div class="row">
+                <div class="pot dropdown" id="0">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="0">Add</button>
+                    </div>
+                    <div class="hidden planted">
+                        <button value="0">Info</button>
+                        <button value="0">Move</button>
+                        <button value="0">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="1">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="1">Add</button>
+                    </div>
+                    <div class=" hidden planted">
+                        <button value="1">Info</button>
+                        <button value="1">Move</button>
+                        <button value="1">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="2">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="2">Add</button>
+                    </div>
+                    <div class=" hidden planted">
+                        <button value="2">Info</button>
+                        <button value="2">Move</button>
+                        <button value="2">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="pot dropdown" id="3">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="3">Add</button>
+                    </div>
+                    <div class=" hidden planted">
+                        <button value="3">Info</button>
+                        <button value="3">Move</button>
+                        <button value="3">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="4">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="4">Add</button>
+                    </div>
+                    <div class="hidden planted">
+                        <button value="4">Info</button>
+                        <button value="4">Move</button>
+                        <button value="4">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="5">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="5">Add</button>
+                    </div>
+                    <div class="hidden planted">
+                        <button value="5">Info</button>
+                        <button value="5">Move</button>
+                        <button value="5">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="padding_end">
+                <p></p>
+            </div>
+
         </div>
-    </nav>
 
-</section>
+        <div class="container hidden" id="garden2">
 
-<!-- (John) Sidebar -->
+            <div class="row">
+                <div class="pot dropdown" id="6">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="6">Add</button>
+                    </div>
+                    <div class="hidden planted">
+                        <button value="6">Info</button>
+                        <button value="6">Move</button>
+                        <button value="6">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="7">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="7">Add</button>
+                    </div>
+                    <div class=" hidden planted">
+                        <button value="7">Info</button>
+                        <button value="7">Move</button>
+                        <button value="7">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="8">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="8">Add</button>
+                    </div>
+                    <div class=" hidden planted">
+                        <button value="8">Info</button>
+                        <button value="8">Move</button>
+                        <button value="8">Remove</button>
+                    </div>
+                </div>
+            </div>
 
-<a href="info.html">
-    <div id="sidebar">
+            <div class="row">
+                <div class="pot dropdown" id="9">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="9">Add</button>
+                    </div>
+                    <div class=" hidden planted">
+                        <button value="9">Info</button>
+                        <button value="9">Move</button>
+                        <button value="9">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="10">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="10">Add</button>
+                    </div>
+                    <div class="hidden planted">
+                        <button value="10">Info</button>
+                        <button value="10">Move</button>
+                        <button value="10">Remove</button>
+                    </div>
+                </div>
+                <div class="pot dropdown" id="11">
+                    <img src="../img/pot.png">
+                    <div class="dropdown-content unplanted hidden">
+                        <button value="11">Add</button>
+                    </div>
+                    <div class="hidden planted">
+                        <button value="11">Info</button>
+                        <button value="11">Move</button>
+                        <button value="11">Remove</button>
+                    </div>
+                </div>
+            </div>
 
-        <div id="sidebar_option_1">
-            <h2>Info</h2>
+            <div id="padding_end">
+                <p></p>
+            </div>
+
         </div>
 
-    </div>
-</a>
+        <div id="plantList">
+            <p id="exitPlantList"><i class="fas fa-times"></i></p>
+            <h2>Plant List</h2>
+            <hr>
+            <select size="6">
+                <option value="Apple">
+                    <h3>Apple</h3>
+                </option>
+                <option value="Barberry">
+                    <h3>Barberry</h3>
+                </option>
+                <option value="Chili">
+                    <h3>Chili</h3>
+                </option>
+                <option value="Date_Palm">
+                    <h3>Date Palm</h3>
+                </option>
+                <option value="Pepper">
+                    <h3>Pepper</h3>
+                </option>
+                <option value="Tomato">
+                    <h3>Tomato</h3>
+                </option>
+            </select>
+        </div>
 
-<div class="container">
-
-    <div class="row">
-        <div class="pot dropdown" id="0">
-            <img src="../img/pot.png">
-            <div class="dropdown-content hidden">
-                <button value="0">Add</button>
-            </div>
-            <div class="hidden planted">
-                <button value="0">Move</button>
-                <button value="0">Remove</button>
+        <div id="plantInfo">
+            <p id="exitPlantInfo"><i class="fas fa-times"></i></p>
+            <h2 style="text-align: center">Plant Info</h2>
+            <hr>
+            <div style="margin:0 auto; width: 90%;">
+                <img src="../img/pot.png" alt="Apple" id="pot">
+                <p><strong>Date Planted: </strong>DD/MM/YY</p>
+                <p><strong>Watering: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p><strong>Soil: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+                <p><strong>Fertilizer: </strong>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat nulla pariatur.</p>
+                <p><strong>Common Pest: </strong>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum.</p>
+                <p><strong>Sunlight: </strong>Facilisis sed odio morbi quis commodo.</p>
+                <p><strong>Pot Type: </strong>Nisl suscipit adipiscing bibendum est.</p>
             </div>
         </div>
-        <div class="pot dropdown" id="1">
-            <img src="../img/pot.png">
-            <div class="dropdown-content hidden">
-                <button value="1">Add</button>
+
+        <div class="footer">
+            <div id="facebook">
+                <img src="../img/facebook.png" alt="facebook">
             </div>
-            <div class=" hidden planted">
-                <button value="1">Move</button>
-                <button value="1">Remove</button>
+            <div id="instagram">
+                <img src="../img/instagram.png" alt="instagram">
+            </div>
+            <a href="https://github.com/Kwistech/HappyGarden">
+                <div id="github">
+                    <img src="../img/github.png" alt="github">
+                </div>
+            </a>
+            <div id="references">
+                <p>
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
+                    from <a href="http://www.flaticon.com">www.flaticon.com</a>
+                </p>
             </div>
         </div>
-        <div class="pot dropdown" id="2">
-            <img src="../img/pot.png">
-            <div class="dropdown-content hidden">
-                <button value="2">Add</button>
-            </div>
-            <div class=" hidden planted">
-                <button value="2">Move</button>
-                <button value="2">Remove</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="pot dropdown" id="3">
-            <img src="../img/pot.png">
-            <div class="dropdown-content hidden">
-                <button value="3">Add</button>
-            </div>
-            <div class=" hidden planted">
-                <button value="3">Move</button>
-                <button value="3">Remove</button>
-            </div>
-        </div>
-        <div class="pot dropdown" id="4">
-            <img src="../img/pot.png">
-            <div class="dropdown-content hidden">
-                <button value="4">Add</button>
-            </div>
-            <div class="hidden planted">
-                <button value="4">Move</button>
-                <button value="4">Remove</button>
-            </div>
-        </div>
-        <div class="pot dropdown" id="5">
-            <img src="../img/pot.png">
-            <div class="dropdown-content hidden">
-                <button value="5">Add</button>
-            </div>
-            <div class="hidden planted">
-                <button value="5">Move</button>
-                <button value="5">Remove</button>
-            </div>
-        </div>
-    </div>
-    <div id="plantList">
-        <p id="exitPlantList"><i class="fas fa-times"></i></p>
-        <h2>Plant List</h2>
-        <hr>
-        <table>
-            <tr>
-                <td>Apple</td>
-                <td><button value="Apple">Add</button></td>
-            </tr>
-            <tr>
-                <td>Barberry</td>
-                <td><button value="Barberry">Add</button></td>
-            </tr>
-            <tr>
-                <td>Chili</td>
-                <td><button value="Chili">Add</button></td>
-            </tr>
-            <tr>
-                <td>Date Palm</td>
-                <td><button value="Date_Palm">Add</button></td>
-            </tr>
-            <tr>
-                <td>Tomato</td>
-                <td><button value="Tomato">Add</button></td>
-            </tr>
-            <tr>
-                <td>Peper</td>
-                <td><button value="Pepper">Add</button></td>
-            </tr>
-        </table>
-    </div>
+        <script src="../scripts/minh.js"></script>
 
-    <div id="padding_end">
-        <p></p>
-    </div>
+    </body>
 
-</div>
-
-<div class="footer">
-    <div id="facebook">
-        <img src="../img/facebook.png" alt="facebook">
-    </div>
-    <div id="instagram">
-        <img src="../img/instagram.png" alt="instagram">
-    </div>
-    <a href="https://github.com/Kwistech/HappyGarden">
-        <div id="github">
-            <img src="../img/github.png" alt="github">
-        </div>
-    </a>
-    <div id="references">
-        <p>
-            Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
-            from <a href="http://www.flaticon.com">www.flaticon.com</a>
-        </p>
-    </div>
-</div>
-
-<script src="../scripts/minh.js"></script>
-
-</body>
 </html>
