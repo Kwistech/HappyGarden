@@ -43,6 +43,13 @@ li a {
     text-decoration: none;
 }
 
+#plantInfoPopup{
+    margin: 0 auto;
+    width: 90%;
+    overflow: scroll;
+    height: 550px;
+}
+
 h1 {
     font-size: 2em;
 }
@@ -199,6 +206,7 @@ option{
     padding: 3%;
     border-radius: 10%;
     margin: auto auto 2%;
+    background: white;
 }
 
 button{
@@ -224,9 +232,9 @@ button{
 
 #pot {
     display: block;
-    width: 25%;
+
     margin: auto;
-    max-width: 100px;
+    max-width: 300px;
 }
 
 .center {

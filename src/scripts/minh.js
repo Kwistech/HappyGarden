@@ -49,7 +49,7 @@ $(document).ready(function () {
             for (let index = 0; index < potObjects.length; index++) {
                 potObjects[index].classList.remove("green");
 
-                potObjects[index].firstElementChild.setAttribute("style", "background:white");
+                potObjects[index].firstElementChild.setAttribute("style", "border: 3px solid black;");
 
             }
         }
@@ -79,32 +79,32 @@ $(document).ready(function () {
         switch (value) {
             case "Apple":
                 {
-                    pot.firstElementChild.setAttribute("src", "../img/pot_Apple.png");
+                    pot.firstElementChild.setAttribute("src", "../img/Dwarf-Fiesta-Apple-Tree-in-pot.jpg");
                     break;
                 }
             case "Barberry":
                 {
-                    pot.firstElementChild.setAttribute("src", "../img/pot_Barberry.png");
+                    pot.firstElementChild.setAttribute("src", "../img/mzm_a19ea3c699094e298b47c9537ad35774_580_580_ffffff_75.jpg");
                     break;
                 }
             case "Chili":
                 {
-                    pot.firstElementChild.setAttribute("src", "../img/pot_Chili.png");
+                    pot.firstElementChild.setAttribute("src", "../img/chilli peppers growing in a pot.jpg");
                     break;
                 }
             case "Date_Palm":
                 {
-                    pot.firstElementChild.setAttribute("src", "../img/pot_Date.png");
+                    pot.firstElementChild.setAttribute("src", "../img/pygmy-date-palm-pot.jpg");
                     break;
                 }
             case "Tomato":
                 {
-                    pot.firstElementChild.setAttribute("src", "../img/pot_Tomato.png");
+                    pot.firstElementChild.setAttribute("src", "../img/1.-Choose-an-ideal-location1.jpg");
                     break;
                 }
             default:
                 {
-                    pot.firstElementChild.setAttribute("src", "../img/pot_Peper.png");
+                    pot.firstElementChild.setAttribute("src", "../img/71oXxtt-4dL._SY550_.jpg");
                 }
         }
 
@@ -127,7 +127,7 @@ $(document).ready(function () {
             if (index != potSelected) {
                 potObjects[index].classList.add("green");
 
-                potObjects[index].firstElementChild.setAttribute("style", "background:green");
+                potObjects[index].firstElementChild.setAttribute("style", "border: 6px solid green;");
             }
         }
 
