@@ -156,5 +156,34 @@ $(document).ready(function () {
         $("#garden2").removeClass("hidden");
         $("#garden-selecter > h1").text("Garden 2");
     });
+
+
+    $("#plantWidth").keyup(function(){
+        let width = $("#plantWidth").val();
+        let length = $("#plantLength").val();
+
+        $("#area").val(width*length);
+    });
+
+    $("#plantLength").keyup(function(){
+        let width = $("#plantLength").val();
+        let length = $("#plantWidth").val();
+
+        $("#area").val(width*length);
+    });
+
+    $("#plantWidth").change(function(){
+        let width = $("#plantWidth").val();
+        let length = $("#plantLength").val();
+
+        $("#area").val(width*length);
+    });
+
+    $("#plantLength").change(function(){
+        let width = $("#plantLength").val();
+        let length = $("#plantWidth").val();
+
+        $("#area").val(width*length);
+    });
 });
 
